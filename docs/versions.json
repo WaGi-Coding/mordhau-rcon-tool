@@ -1,80 +1,7 @@
 [
    {
-      "Version":"1.0.0",
-      "Fixes":[
-         "Fix EDITED VALUE!!!",
-         "Fix 2",
-         "Fix 3"
-      ],
-      "Additions":[
-         "Test chicken",
-         "Addition 2",
-         "Addition 3"
-      ]
-   },
-   {
-      "Version":"1.1.0",
-      "Fixes":[
-         "Fix 1",
-         "Fix 2",
-         "Fix 3"
-      ],
-      "Additions":[
-         "Addition 3",
-         "Addition 2",
-         "Addition 3"
-      ]
-   },
-   {
-      "Version":"1.2.0",
-      "Fixes":[
-         "Fix 1",
-         "Fix 2",
-         "Fix 3"
-      ],
-      "Additions":[
-         "Addition 3",
-         "Addition 2",
-         "Addition 3"
-      ]
-   },
-   {
-      "Version":"1.3.0",
-      "Fixes":[
-         "Fix 1",
-         "Fix 2",
-         "Fix 3"
-      ],
-      "Additions":[
-         "Addition 3",
-         "Addition 2",
-         "Addition 3"
-      ]
-   },
-   {
-      "Version":"1.4.0",
-      "Fixes":[
-         "Fix 1",
-         "Fix 2",
-         "Fix 3"
-      ],
-      "Additions":null
-   },
-   {
-      "Version":"1.5.0",
-      "Fixes":[
-         "BliBlaBlub",
-         "New fix",
-         "Fix 3"
-      ],
-      "Additions":[
-         "Addition 3",
-         "Addition 2",
-         "Addition 3"
-      ]
-   },
-   {
       "Version":"1.6.0",
+	  "Header":"Overall informations about this Update. Thanks for using bla bla blaaaaaa blaaaaaaaaaaaa blaaaaaaa bla",
       "Fixes":[
          "Heyman",
          "New fix",
@@ -82,6 +9,7 @@
       ],
       "Additions":[
          "Addition 1"
-      ]
+      ],
+	  "Footer":"Optional Footer-Text to add ^^"
    }
 ]
