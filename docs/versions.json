@@ -72,5 +72,16 @@
          "Addition 2",
          "Addition 3"
       ]
+   },
+   {
+      "Version":"1.6.0",
+      "Fixes":[
+         "Heyman",
+         "New fix",
+         "Fix 3"
+      ],
+      "Additions":[
+         "Addition 1"
+      ]
    }
 ]
