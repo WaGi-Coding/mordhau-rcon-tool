@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Mordhau_RCON.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Servers" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[]</Value>
+    </Setting>
+    <Setting Name="KeepAlive" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AliveFreqSec" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="LastServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{"ServerName":"LastServerEntry","IP":"INVALID","Port":7778,"Password":"CHANGEME"}</Value>
+    </Setting>
+    <Setting Name="ColorConnecting" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"255, 140, 0"</Value>
+    </Setting>
+    <Setting Name="ColorConSuc" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"173, 255, 47"</Value>
+    </Setting>
+    <Setting Name="ColorErrors" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"255, 0, 0"</Value>
+    </Setting>
+    <Setting Name="ColorCommands" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"255, 255, 255"</Value>
+    </Setting>
+    <Setting Name="ColorOutput" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"255, 255, 0"</Value>
+    </Setting>
+    <Setting Name="ColorConsole" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"64, 64, 64"</Value>
+    </Setting>
+    <Setting Name="Opacity" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.99</Value>
+    </Setting>
+    <Setting Name="LastCommands" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AutocompleteList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">["help","alive","listen allon","listen alloff","listen login","listen matchstate","listen killfeed","listen scorefeed","listen chat","listen custom","listen punishment","listenstatus","adminlist","banlist","mutelist","playerlist","maplist","addmap ","removemap ","addadmin ","removeadmin ","addbots ","removebots ","changelevel ","say ","customsay ","string ","event ","spawnserveractor ","kick ","ban ","unban ","mute ","unmute ","scoreboard","info","stats","writetoconsole ","changeteam ","modifyinivar ","getmatchduration","extendmatchduration ","setmotd ","teleportplayer ","killplayer ","getteamdamage ","renameplayer ","mountpak ","chatlog ","shutdown"]</Value>
+    </Setting>
+    <Setting Name="UpgradeRequired" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SuppressAlive" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
