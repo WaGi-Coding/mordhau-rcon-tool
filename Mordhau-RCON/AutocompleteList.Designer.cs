@@ -131,6 +131,7 @@ namespace Mordhau_RCON
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(400, 500);
             this.Name = "AutocompleteList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Settings - Edit Autocomplete-List";
             this.Load += new System.EventHandler(this.AutocompleteList_Load);
             this.ResumeLayout(false);
