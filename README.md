@@ -3,16 +3,30 @@
 __[>DOWNLOAD HERE<](https://github.com/WaGi-Coding/mordhau-rcon-tool/releases/)__
 
 
-![MainForm](https://i.imgur.com/KqXFWat.png)
+<p align="center">
+  <img src="https://i.imgur.com/KqXFWat.png">
+</p>
 
-![MainFormSettings](https://i.imgur.com/n5nrFtX.png)
+<p align="center">
+  <img src="https://i.imgur.com/n5nrFtX.png">
+</p>
 
-![ServersForm](https://i.imgur.com/OS5jvUP.png)
+<p align="center">
+  <img src="https://i.imgur.com/OS5jvUP.png">
+</p>
 
-![AddServerForm](https://i.imgur.com/eNGJWJ2.png)
+<p align="center">
+  <img src="https://i.imgur.com/eNGJWJ2.png">
+</p>
 
-![EditServerForm](https://i.imgur.com/85UYKv6.png)
+<p align="center">
+  <img src="https://i.imgur.com/85UYKv6.png">
+</p>
 
-![AutocompleteListForm](https://i.imgur.com/ALuYofk.png)
+<p align="center">
+  <img src="https://i.imgur.com/ALuYofk.png">
+</p>
 
-![ColorsForm](https://i.imgur.com/6s7kiLV.png)
+<p align="center">
+  <img src="https://i.imgur.com/6s7kiLV.png">
+</p>
