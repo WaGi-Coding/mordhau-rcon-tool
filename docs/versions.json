@@ -1,62 +1,20 @@
 [
 	{
-      "Version":"1.0.2",
-	  "Header":"Overall version Informations",
+      "Version":"0.0.9",
+	  "Header":"Fun-Fact, you should not see this appearing in the program ._.",
       "Fixes":[
-         "• Fix 1",
-         "• Fix 2",
-         "• Fix 3"
+         "• Because",
+         "• this is",
+         "• just my",
+		 "• version",
+		 "• template",
       ],
       "Additions":[
-         "• Addition 1",
-		 "• Addition 2",
-		 "• Addition 3"
+         "• So there",
+		 "• are no",
+		 "• additions"
       ],
-	  "Footer":"Optional Footer-Text to add"
+	  "Footer":"I hope you understand :P"
    },
-   {
-      "Version":"1.0.3",
-	  "Header":"Overall version Informations",
-      "Fixes":[
-         "• Fix 1",
-         "• Fix 2",
-         "• Fix 3"
-      ],
-      "Additions":[
-         "• Addition 1",
-		 "• Addition 2",
-		 "• Addition 3"
-      ],
-	  "Footer":"Optional Footer-Text to add"
-   },
-   {
-      "Version":"1.0.4",
-	  "Header":"Overall version Informations",
-      "Fixes":[
-         "• Fix 1",
-         "• Fix 2",
-         "• Fix 3"
-      ],
-      "Additions":[
-         "• Addition 1",
-		 "• Addition 2",
-		 "• Addition 3"
-      ],
-	  "Footer":"Optional Footer-Text to add"
-   },
-   {
-      "Version":"1.0.5",
-	  "Header":"Overall version Informations",
-      "Fixes":[
-         "• Fix 1",
-         "• Fix 2",
-         "• Fix 3"
-      ],
-      "Additions":[
-         "• Addition 1",
-		 "• Addition 2",
-		 "• Addition 3"
-      ],
-	  "Footer":"Optional Footer-Text to add"
-   },
+
 ]
