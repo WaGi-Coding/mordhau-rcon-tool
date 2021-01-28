@@ -1,7 +1,8 @@
 # Taki7o7's Mordhau RCON-Tool
 
-__[>DOWNLOAD HERE<](https://github.com/WaGi-Coding/mordhau-rcon-tool/releases/)__
-
+<p align="center">
+  <a href="https://github.com/WaGi-Coding/mordhau-rcon-tool/releases/">DOWNLOAD HERE</a>
+</p>
 
 <p align="center">
   <img src="https://i.imgur.com/KqXFWat.png">
