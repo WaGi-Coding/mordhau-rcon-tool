@@ -16,5 +16,15 @@
       ],
 	  "Footer":"I hope you understand :P"
    },
+   {
+      "Version":"1.0.1",
+      "Fixes":[
+         "• Fixed lastserver does not get saved after\n\tediting the current one,\n\tbut not directly load it"
+      ],
+      "Additions":[
+         "• Added an Installer for the program"
+      ],
+	  "Footer":"You may want to get back your saved settings\nCheckout the path %localappdata%\\WaGi-Coding"
+   },
 
 ]
