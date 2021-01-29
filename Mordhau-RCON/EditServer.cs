@@ -132,9 +132,12 @@ namespace Mordhau_RCON
                 {
                     mainForm.Sr.S.Close();
                 }
-                
+
+                mainForm.StatusLabel.Text = "Server: " + newServerEntryData.ServerName;
+                mainForm.lastServer = newServerEntryData;
+                Properties.Settings.Default.LastServer = JsonConvert.SerializeObject(mainForm.lastServer);
+                Properties.Settings.Default.Save();
             }
-            mainForm.StatusLabel.Text = "Server: " + newServerEntryData.ServerName;
             this.DialogResult = DialogResult.OK;
 
 
