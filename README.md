@@ -5,6 +5,14 @@
 </p>
 
 <p align="center">
+  It currently has no special functionality, just a RCON console with some features. It's planned to add more in future, but Devs will move to JSON format for outputs - I am waiting for that to add more functionality, as parsing plaintext is a pain ^^
+</p>
+
+<p align="center">
+  Let me know if you find any bugs or if you have any questions. Here in Issues tab, or via Discord: Taki7o7#1753
+</p>
+
+<p align="center">
   <img src="https://i.imgur.com/KqXFWat.png">
 </p>
 
