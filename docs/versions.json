@@ -19,12 +19,12 @@
    {
       "Version":"1.0.1",
       "Fixes":[
-         "• Fixed lastserver does not get saved after\n\tediting the current one,\n\tbut not directly load it"
+         "• Fixed lastserver does not get saved after\n\tediting the current one,\n\tbut not directly load it\n\t& then restart the app"
       ],
       "Additions":[
          "• Added an Installer for the program"
       ],
-	  "Footer":"You may want to get back your saved settings\nCheckout the path %localappdata%\\WaGi-Coding"
+	  "Footer":"You may want to get back your saved settings\nCheckout the path %localappdata%\\WaGi-Coding\n\nThis will be done automatically with future updates."
    },
 
 ]
