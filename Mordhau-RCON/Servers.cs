@@ -89,7 +89,7 @@ namespace Mordhau_RCON
             listBox1.Items.RemoveAt(theIndex);
             servers.RemoveAt(theIndex);
 
-            if (servers != null && servers.Count > 0)
+            if (servers != null)
             {
                 Properties.Settings.Default.Servers = JsonConvert.SerializeObject(servers);
                 Properties.Settings.Default.Save();
@@ -194,6 +194,7 @@ namespace Mordhau_RCON
                 var result = MessageBox.Show($"You're about to delete following server:\n{servers[listBox1.SelectedIndex].ServerName}\n\nAre you sure?", "Delete Server", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
+                    Console.WriteLine(mainForm.lastServer.ServerName);
                     if (mainForm.lastServer.ServerName == listBox1.SelectedItem.ToString())
                     {
                         mainForm.StatusLabel.Text = "Server: Unsaved Server";
