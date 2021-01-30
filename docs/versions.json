@@ -19,7 +19,7 @@
    {
       "Version":"1.0.1",
       "Fixes":[
-         "• Fixed lastserver does not get saved after editing the current one,\n\t  but not directly load it & then restart the app"
+         "• Fixed lastserver does not get saved after editing the current one,\n\t    but not directly load it & then restart the app"
       ],
       "Additions":[
          "• Added an Installer for the program"
@@ -29,7 +29,7 @@
    {
       "Version":"1.0.2",
       "Fixes":[
-         "• Fixed server does not actually delete, if\n\t  it was the only one in the list"
+         "• Fixed server does not actually delete, if\n\t    it was the only one in the list"
       ]
    },
 
