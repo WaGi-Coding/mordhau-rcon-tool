@@ -19,12 +19,18 @@
    {
       "Version":"1.0.1",
       "Fixes":[
-         "• Fixed lastserver does not get saved after\n\tediting the current one,\n\tbut not directly load it\n\t& then restart the app"
+         "• Fixed lastserver does not get saved after editing the current one,\n\tbut not directly load it & then restart the app"
       ],
       "Additions":[
          "• Added an Installer for the program"
       ],
 	  "Footer":"You may want to get back your saved settings\nCheckout the path %localappdata%\\WaGi-Coding\n\nThis will be done automatically with future updates."
+   },
+   {
+      "Version":"1.0.2",
+      "Fixes":[
+         "• Fixed server does not actually delete, if\n\tit was the only one in the list"
+      ]
    },
 
 ]
