@@ -551,6 +551,11 @@ namespace Mordhau_RCON
         List<string> lastCommands = new List<string>();
         private void CommandOutput(string output)
         {
+            if (Properties.Settings.Default.SuppressAlive && output == "alive")
+            {
+                return;
+            }
+
             if (lastCommands == null)
             {
                 lastCommands = new List<string>();
@@ -570,10 +575,6 @@ namespace Mordhau_RCON
                 lastCommands.Add(output);
             }
 
-            if (Properties.Settings.Default.SuppressAlive && output == "alive")
-            {
-                return;
-            }
 
             console.BeginInvoke((MethodInvoker)delegate ()
             {
