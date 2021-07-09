@@ -32,5 +32,14 @@
          "• Fixed server does not actually delete, if\n\t    it was the only one in the list"
       ]
    },
+   {
+      "Version":"1.0.3",
+      "Fixes":[
+         "• Updated Discord-Tag in the Info Window"
+      ],
+      "Additions":[
+         "• Added Timestamps for the Console which can be\n\tenabled (disabled by default) and customized in the settings"
+      ]
+   },
 
 ]
