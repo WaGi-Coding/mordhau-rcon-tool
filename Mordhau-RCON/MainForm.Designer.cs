@@ -63,6 +63,7 @@ namespace Mordhau_RCON
             this.StatusDot = new System.Windows.Forms.Label();
             this.StatusLabel = new System.Windows.Forms.Label();
             this.checkUpdateTimer = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbPort)).BeginInit();
@@ -90,6 +91,8 @@ namespace Mordhau_RCON
             this.btnSend.BackColor = System.Drawing.SystemColors.Control;
             this.btnSend.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSend.Name = "btnSend";
+            this.btnSend.UseCompatibleTextRendering = true;
+            this.btnSend.UseMnemonic = false;
             this.btnSend.UseVisualStyleBackColor = false;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
@@ -381,11 +384,22 @@ namespace Mordhau_RCON
             this.checkUpdateTimer.Interval = 300000;
             this.checkUpdateTimer.Tick += new System.EventHandler(this.checkUpdateTimer_Tick);
             // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Name = "button1";
+            this.button1.UseCompatibleTextRendering = true;
+            this.button1.UseMnemonic = false;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.StatusDot);
             this.Controls.Add(this.checkBoxAutoscroll);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -446,6 +460,7 @@ namespace Mordhau_RCON
         public System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem timestampSettingsToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
 

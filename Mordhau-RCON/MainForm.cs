@@ -1379,6 +1379,11 @@ namespace Mordhau_RCON
                 timestampSettingsForm.ShowDialog();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tbConsole.Text = String.Empty;
+        }
     }
 
 
