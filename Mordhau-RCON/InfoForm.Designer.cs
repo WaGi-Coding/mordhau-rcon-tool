@@ -145,7 +145,7 @@ namespace Mordhau_RCON
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(169, 20);
             this.label13.TabIndex = 8;
-            this.label13.Text = "or Discord:   Taki7o7#1753";
+            this.label13.Text = "or Discord:   Taki7o7#0707";
             this.label13.UseMnemonic = false;
             // 
             // button2

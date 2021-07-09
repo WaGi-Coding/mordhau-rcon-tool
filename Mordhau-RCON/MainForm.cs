@@ -79,7 +79,7 @@ namespace Mordhau_RCON
 
         private void timerElapsed(object sender, ElapsedEventArgs e)
         {
-            Console.WriteLine("DO ALIVE");
+            //Console.WriteLine("DO ALIVE");
             if (Sr != null && Sr.Connected)
             {
                 Sr.ServerCommand("alive");
@@ -497,7 +497,7 @@ namespace Mordhau_RCON
                     Properties.Settings.Default.Save();
                 });
 
-                Sr.ServerCommand("alive"); // initial alive
+                Sr.ServerCommand("alive"); // initial alive, for some reason first command shows no output, dirty fix ._.
                 if (Sr != null && Sr.Connected && Properties.Settings.Default.KeepAlive)
                 {
                     timerAlive.Start();
@@ -551,6 +551,7 @@ namespace Mordhau_RCON
         List<string> lastCommands = new List<string>();
         private void CommandOutput(string output)
         {
+            Console.WriteLine(output);
             if (Properties.Settings.Default.SuppressAlive && output == "alive")
             {
                 return;
