@@ -30,7 +30,7 @@ namespace Mordhau_RCON
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText("Taki7o7#1753");
+            Clipboard.SetText("Taki7o7#0707");
         }
 
         private void linkLabelGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
