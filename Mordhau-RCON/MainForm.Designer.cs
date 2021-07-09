@@ -43,6 +43,8 @@ namespace Mordhau_RCON
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.keepAliveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hideAliveCMDOutputToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.timestampSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateAvailableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tbIP = new System.Windows.Forms.TextBox();
@@ -121,7 +123,9 @@ namespace Mordhau_RCON
             this.autocompleteListToolStripMenuItem,
             this.toolStripSeparator1,
             this.keepAliveToolStripMenuItem,
-            this.hideAliveCMDOutputToolStripMenuItem});
+            this.hideAliveCMDOutputToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.timestampSettingsToolStripMenuItem});
             resources.ApplyResources(this.toolStripMenuItemSettings, "toolStripMenuItemSettings");
             this.toolStripMenuItemSettings.Name = "toolStripMenuItemSettings";
             this.toolStripMenuItemSettings.Click += new System.EventHandler(this.Settings_Click);
@@ -190,6 +194,20 @@ namespace Mordhau_RCON
             this.hideAliveCMDOutputToolStripMenuItem.MouseEnter += new System.EventHandler(this.SubMenu_MouseEnter);
             this.hideAliveCMDOutputToolStripMenuItem.MouseLeave += new System.EventHandler(this.Menu_MouseLeave);
             this.hideAliveCMDOutputToolStripMenuItem.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MenuMouseMove);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            // 
+            // timestampSettingsToolStripMenuItem
+            // 
+            this.timestampSettingsToolStripMenuItem.Name = "timestampSettingsToolStripMenuItem";
+            resources.ApplyResources(this.timestampSettingsToolStripMenuItem, "timestampSettingsToolStripMenuItem");
+            this.timestampSettingsToolStripMenuItem.Click += new System.EventHandler(this.timestampSettingsToolStripMenuItem_Click);
+            this.timestampSettingsToolStripMenuItem.MouseEnter += new System.EventHandler(this.SubMenu_MouseEnter);
+            this.timestampSettingsToolStripMenuItem.MouseLeave += new System.EventHandler(this.Menu_MouseLeave);
+            this.timestampSettingsToolStripMenuItem.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MenuMouseMove);
             // 
             // updateAvailableToolStripMenuItem
             // 
@@ -426,6 +444,8 @@ namespace Mordhau_RCON
         public System.Windows.Forms.Timer checkUpdateTimer;
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
         public System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem timestampSettingsToolStripMenuItem;
     }
 }
 

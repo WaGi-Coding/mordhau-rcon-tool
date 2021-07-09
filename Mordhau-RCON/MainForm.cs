@@ -5,6 +5,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -41,6 +42,9 @@ namespace Mordhau_RCON
 
         public double opacity = 0.95;
 
+        public bool enableTimestamps = false;
+        public string timestampFormat = "dd.MM.yyyy HH:mm:ss";
+
         public MainForm()
         {
             InitializeComponent();
@@ -55,7 +59,6 @@ namespace Mordhau_RCON
                 Properties.Settings.Default.UpgradeRequired = false;
                 Properties.Settings.Default.Save();
             }
-
 
             keepAliveItem = customMenuItem;
             keepAliveItem.MouseEnter += Menu_MouseEnter;
@@ -74,6 +77,30 @@ namespace Mordhau_RCON
 
             tbConsole.BackColor = colorConsole;
 
+
+            // Timestamp default
+            try
+            {
+                if (string.IsNullOrEmpty(Properties.Settings.Default.TimestampFormat))
+                {
+                    string pattern = "[" + CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern + " " + CultureInfo.CurrentCulture.DateTimeFormat.LongTimePattern + "]";
+                    Properties.Settings.Default.TimestampFormat = pattern;
+                    Properties.Settings.Default.Save();
+                    timestampFormat = Properties.Settings.Default.TimestampFormat;
+                }
+                else
+                {
+                    timestampFormat = timestampFormat = Properties.Settings.Default.TimestampFormat;
+                }
+
+                // let's do enabled state stuff here as well
+                enableTimestamps = Properties.Settings.Default.TimestampsEnabled;
+            }
+            catch (Exception)
+            {
+                //nothing - keeps initialized timestamp format
+            }
+            
             
         }
 
@@ -148,7 +175,7 @@ namespace Mordhau_RCON
 
             ToolStripControlHost tsHost = new ToolStripControlHost(keepAliveItem);
 
-            toolStripMenuItemSettings.DropDownItems.Insert(toolStripMenuItemSettings.DropDownItems.Count - 1, tsHost);
+            toolStripMenuItemSettings.DropDownItems.Insert(toolStripMenuItemSettings.DropDownItems.Count - 3, tsHost);
             //toolStripMenuItemSettings.DropDownItems.Insert(toolStripMenuItemSettings.DropDownItems.Count - 1, new ToolStripSeparator());
 
 
@@ -265,7 +292,12 @@ namespace Mordhau_RCON
             {
                 if (!informedAboutEmptyCmdAlready)
                 {
-                    tbConsole.AppendText("Cannot send empty command!" + Environment.NewLine, colorConnecting);
+                    string ts = string.Empty;
+                    if (this.enableTimestamps)
+                    {
+                        ts = DateTime.Now.ToString(this.timestampFormat) + " - ";
+                    }
+                    tbConsole.AppendText(ts + "Cannot send empty command!" + Environment.NewLine, colorConnecting);
                     informedAboutEmptyCmdAlready = true;
                 }
                 return;
@@ -296,7 +328,13 @@ namespace Mordhau_RCON
 
                 console.BeginInvoke((MethodInvoker)delegate ()
                 {
-                    tbConsole.AppendText("Connecting..." + Environment.NewLine, colorConnecting);
+                    string ts = string.Empty;
+                    if (this.enableTimestamps)
+                    {
+                        ts = DateTime.Now.ToString(this.timestampFormat) + " - ";
+                    }
+
+                    tbConsole.AppendText(ts + "Connecting..." + Environment.NewLine, colorConnecting);
 
                     StatusDot.ForeColor = Color.Orange;
                     //StatusDot.Invalidate();
@@ -463,7 +501,13 @@ namespace Mordhau_RCON
                     //tbInput.BackColor = Color.DarkGray;
                     //btnSend.BackColor = Color.Gray;
 
-                    tbConsole.AppendText(SourceRcon.ConnectionSuccessString + Environment.NewLine, colorConSuc);
+                    string ts = string.Empty;
+                    if (this.enableTimestamps)
+                    {
+                        ts = DateTime.Now.ToString(this.timestampFormat) + " - ";
+                    }
+
+                    tbConsole.AppendText(ts + SourceRcon.ConnectionSuccessString + Environment.NewLine, colorConSuc);
 
 
                     tbInput.Focus();
@@ -526,7 +570,13 @@ namespace Mordhau_RCON
                 btnSend.Enabled = false;
 
                 StatusDot.ForeColor = Color.Red;
-                tbConsole.AppendText(output + Environment.NewLine, colorConnecting);
+
+                string ts = string.Empty;
+                if (this.enableTimestamps)
+                {
+                    ts = DateTime.Now.ToString(this.timestampFormat) + " - ";
+                }
+                tbConsole.AppendText(ts + output + Environment.NewLine, colorConnecting);
                 timerAlive.Stop();
                 //newConsole.Text += Environment.NewLine + "Command: " + output + Environment.NewLine + Environment.NewLine;
             });
@@ -579,7 +629,12 @@ namespace Mordhau_RCON
 
             console.BeginInvoke((MethodInvoker)delegate ()
             {
-                tbConsole.AppendText(Environment.NewLine + "Command: " + output + Environment.NewLine + Environment.NewLine, colorCommands);
+                string ts = string.Empty;
+                if (this.enableTimestamps)
+                {
+                    ts = DateTime.Now.ToString(this.timestampFormat) + " - ";
+                }
+                tbConsole.AppendText(Environment.NewLine + ts + "Command: " + output + Environment.NewLine + Environment.NewLine, colorCommands);
                 //tbConsole.Text += Environment.NewLine + "Command: " + output + Environment.NewLine + Environment.NewLine;
             });
         }
@@ -611,21 +666,28 @@ namespace Mordhau_RCON
                 {
                     tmpOutput = tmpOutput.Substring(0, tmpOutput.Length - 2);
                 }
+
+                string ts = string.Empty;
+                if (this.enableTimestamps)
+                {
+                    ts = DateTime.Now.ToString(this.timestampFormat) + " - ";
+                }
+
                 if (tmpOutput.Split(new string[] { Environment.NewLine }, StringSplitOptions.None).Length > 1)
                 {
                     if (string.IsNullOrEmpty(feed))
                     {
-                        tbConsole.AppendText(tmpOutput + Environment.NewLine, colorOutput);
+                        tbConsole.AppendText(ts + tmpOutput + Environment.NewLine, colorOutput);
                     }
                     else
                     {
-                        tbConsole.AppendText(feed + Environment.NewLine + tmpOutput + Environment.NewLine, colorOutput);
+                        tbConsole.AppendText(ts + feed + Environment.NewLine + tmpOutput + Environment.NewLine, colorOutput);
                     }
                     //tbConsole.Text += "Console: " + Environment.NewLine + tmpOutput + Environment.NewLine;
                 }
                 else
                 {
-                    tbConsole.AppendText(feed + tmpOutput + Environment.NewLine, colorOutput);
+                    tbConsole.AppendText(ts + feed + tmpOutput + Environment.NewLine, colorOutput);
                     //tbConsole.Text += "Console: " + tmpOutput + Environment.NewLine;
                 }
             });
@@ -682,14 +744,20 @@ namespace Mordhau_RCON
                     tmpOutput = tmpOutput.Substring(0, tmpOutput.Length - 2);
                 }
 
+                string ts = string.Empty;
+                if (this.enableTimestamps)
+                {
+                    ts = DateTime.Now.ToString(this.timestampFormat) + " - ";
+                }
+
                 if (tmpOutput.Split(new string[] { Environment.NewLine }, StringSplitOptions.None).Length > 1)
                 {
-                    tbConsole.AppendText("Error: " + Environment.NewLine + tmpOutput + Environment.NewLine, Color.Red);
+                    tbConsole.AppendText(ts + "Error: " + Environment.NewLine + tmpOutput + Environment.NewLine, Color.Red);
                     //tbConsole.Text += "Error: " + Environment.NewLine + tmpOutput + Environment.NewLine;
                 }
                 else
                 {
-                    tbConsole.AppendText("Error: " + tmpOutput + Environment.NewLine, colorErrors);
+                    tbConsole.AppendText(ts + "Error: " + tmpOutput + Environment.NewLine, colorErrors);
                     //newConsole.Text += "Error: " + tmpOutput + Environment.NewLine;
                 }
             });
@@ -1301,6 +1369,14 @@ namespace Mordhau_RCON
             using (InfoForm infoForm = new InfoForm())
             {
                 infoForm.ShowDialog();
+            }
+        }
+
+        private void timestampSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (FrmTimestampSettings timestampSettingsForm = new FrmTimestampSettings(this))
+            {
+                timestampSettingsForm.ShowDialog();
             }
         }
     }

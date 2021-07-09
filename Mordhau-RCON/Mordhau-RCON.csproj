@@ -127,6 +127,12 @@
     <Compile Include="FrmColors.Designer.cs">
       <DependentUpon>FrmColors.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTimestampSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTimestampSettings.Designer.cs">
+      <DependentUpon>FrmTimestampSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="InfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmColors.resx">
       <DependentUpon>FrmColors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTimestampSettings.resx">
+      <DependentUpon>FrmTimestampSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfoForm.resx">
       <DependentUpon>InfoForm.cs</DependentUpon>

@@ -203,5 +203,29 @@ namespace Mordhau_RCON.Properties {
                 this["SuppressAlive"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool TimestampsEnabled {
+            get {
+                return ((bool)(this["TimestampsEnabled"]));
+            }
+            set {
+                this["TimestampsEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TimestampFormat {
+            get {
+                return ((string)(this["TimestampFormat"]));
+            }
+            set {
+                this["TimestampFormat"] = value;
+            }
+        }
     }
 }
