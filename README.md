@@ -2,6 +2,8 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/WaGi-Coding/mordhau-rcon-tool?label=latest%20release&style=for-the-badge)
 ![GitHub all releases](https://img.shields.io/github/downloads/WaGi-Coding/mordhau-rcon-tool/total?label=Github%20Release%20Downloads&style=for-the-badge)
 
+![GitHub Repo stars](https://img.shields.io/github/stars/WaGi-Coding/mordhau-rcon-tool?style=social)
+
 <p align="center">
   <a href="https://github.com/WaGi-Coding/mordhau-rcon-tool/releases/">DOWNLOAD HERE</a>
 </p>
