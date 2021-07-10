@@ -1,45 +1,51 @@
 [
-	{
-      "Version":"0.0.9",
-	  "Header":"Fun-Fact, you should not see this appearing in the program ._.",
-      "Fixes":[
-         "• Because",
-         "• this is",
-         "• just my",
-		 "• version",
-		 "• template",
-      ],
-      "Additions":[
-         "• So there",
-		 "• are no",
-		 "• additions"
-      ],
-	  "Footer":"I hope you understand :P"
-   },
-   {
-      "Version":"1.0.1",
-      "Fixes":[
-         "• Fixed lastserver does not get saved after editing the current one,\n\t    but not directly load it & then restart the app"
-      ],
-      "Additions":[
-         "• Added an Installer for the program"
-      ],
-	  "Footer":"You may want to get back your saved settings\nCheckout the path %localappdata%\\WaGi-Coding\n\nThis will be done automatically with future updates."
-   },
-   {
-      "Version":"1.0.2",
-      "Fixes":[
-         "• Fixed server does not actually delete, if\n\t    it was the only one in the list"
-      ]
-   },
-   {
-      "Version":"1.0.3",
-      "Fixes":[
-         "• Updated Discord-Tag in the Info Window"
-      ],
-      "Additions":[
-         "• Added Timestamps for the Console which can be\n\tenabled (disabled by default) and customized in the settings"
-      ]
-   },
+  {
+    "Version": "0.0.9",
+    "Header": "Fun-Fact, you should not see this appearing in the program ._.",
+    "Fixes": [
+      "• Because",
+      "• this is",
+      "• just my",
+      "• version",
+      "• template"
+    ],
+    "Additions": [
+      "• So there",
+      "• are no",
+      "• additions"
+    ],
+    "Footer": "I hope you understand :P"
+  },
+  {
+    "Version": "1.0.1",
+    "Fixes": [
+      "• Fixed lastserver does not get saved after editing the current one,\n\t    but not directly load it & then restart the app"
+    ],
+    "Additions": [
+      "• Added an Installer for the program"
+    ],
+    "Footer": "You may want to get back your saved settings\nCheckout the path %localappdata%\\WaGi-Coding\n\nThis will be done automatically with future updates."
+  },
+  {
+    "Version": "1.0.2",
+    "Fixes": [
+      "• Fixed server does not actually delete, if\n\t    it was the only one in the list"
+    ]
+  },
+  {
+    "Version": "1.0.3",
+    "Fixes": [
+      "• Updated Discord-Tag in the Info Window"
+    ],
+    "Additions": [
+      "• Added Timestamps for the Console which can be\n\tenabled (disabled by default) and customized in the settings"
+    ]
+  },
+  {
+    "Version": "1.0.4",
+    "Additions": [
+      "• Added a Button to clear the console"
+    ]
+  }
 
 ]
