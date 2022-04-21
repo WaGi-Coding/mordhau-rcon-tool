@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  Let me know if you find any bugs or if you have any questions. Here in Issues tab, or via Discord: Taki7o7#1753
+  Let me know if you find any bugs or if you have any questions. Here in Issues tab, or via Discord: Taki7o7#0860
 </p>
 
 <p align="center">
